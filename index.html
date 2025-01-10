@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizontal scrolling</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="h-[100vh] bg-gray-700 flex items-center justify-center">
+        <p class="text-xl md:text-2xl text-white">Scroll down 👇</p>
+      </div>
+  <div class="racesWrapper overflow-hidden relative">
+    <div class="races flex">
+      <section class="w-screen h-screen flex items-center justify-center text-[10vw] md:text-[8vw] font-bold text-white shrink-0 bg-blue-500" Data-bgcolor="r">
+        Cats 🐈
+      </section>
+      <section class="w-screen h-screen flex items-center justify-center text-[10vw] md:text-[8vw] font-bold text-white shrink-0 bg-red-500">
+        Dogs 🐕
+      </section>
+      <section class="w-screen h-screen flex items-center justify-center text-[10vw] md:text-[8vw] font-bold text-white shrink-0 bg-green-500">
+        rabbits 🐇
+      </section>
+      <section class="w-screen h-screen flex items-center justify-center text-[10vw] md:text-[8vw] font-bold text-white shrink-0 bg-yellow-500">
+        Otters 🦦
+      </section>
+      <section class="w-screen h-screen flex items-center justify-center text-[10vw] md:text-[8vw] font-bold text-black shrink-0 bg-indigo-300">
+        barthelomew the 3rd 3️⃣
+      </section>
+    </div>
+  </div>
+
+  <div class="h-[100vh] bg-gray-700 flex items-center justify-center">
+    <p class="text-xl md:text-2xl text-white">End of Content 🏁</p>
+  </div>
+
+  <!-- GSAP and ScrollTrigger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
